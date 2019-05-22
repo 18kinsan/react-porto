@@ -123,7 +123,7 @@ a{
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
-  padding: 150px 100px 100px 100px;
+  padding: 80px 50px 50px 100px;
 }
 .contact{
   background-color: white;
@@ -228,6 +228,40 @@ a{
 }
 .colo{
   padding-top: 10px;
+}
+.portofolio h1{
+  font-family: rubik;
+  font-size : 48;
+  text-align: center;
+}
+.kartu{
+  width: 16rem;
+  max-height: 300px;
+  box-shadow: 0 12px 14px rgba(0,0,0,0.25), 0 6px 6px rgba(0,0,0,0.22);
+  animation: scale 3s linear infinite;
+}
+@keyframes scale {
+  50% {
+    -webkit-transform:scale(1.03);
+    -moz-transform:scale(1.03);
+    -ms-transform:scale(1.03);
+    -o-transform:scale(1.03);
+    transform:scale(1.03);
+  }
+}
+.code img{
+  padding-top: 230px;
+  width: 400px;
+  padding-left: 100px;
+  animation-name: floatings;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes floatings {
+  from { transform: translate(0,  0px); }
+  65%  { transform: translate(-15px, 0px); }
+  to   { transform: translate(0px, 0px); }    
 }
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
