@@ -231,7 +231,6 @@ a{
 }
 .portofolio h1{
   font-family: rubik;
-  font-size : 48;
   text-align: center;
 }
 .kartu{
@@ -262,6 +261,18 @@ a{
   from { transform: translate(0,  0px); }
   65%  { transform: translate(-15px, 0px); }
   to   { transform: translate(0px, 0px); }    
+}
+.kontak img{
+  padding-top: 50px;
+  width: 600px;
+  animation-name: floatings;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.pesan h1{
+  font-family: rubik;
+  color: white;
 }
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
