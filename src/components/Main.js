@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch, NavLink } from 'react-router-dom';
-import {Navbar, Nav} from 'react-bootstrap';
+import {Navbar, Nav, Image} from 'react-bootstrap';
 import '../App.css';
 
 import Logo from '../ui/logo.png';
@@ -16,9 +16,9 @@ class Main extends React.Component{
             <BrowserRouter>
             
                 <Navbar className="navi" collapseOnSelect expand="lg" fixed="top">
-                <Navbar.Brand className="Logo" href="#home">
-                    <img src={Logo} alt="Logo"></img>
-                </Navbar.Brand>
+                <NavLink className="Logo" to="/Home">
+                    <Image src={Logo} alt="Logo"></Image>
+                </NavLink>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">

@@ -1,6 +1,7 @@
 body{
-  background-color: #cfcfe2;
+  background-color: white;
   overflow: hidden;
+  
   
 }
 .App {
@@ -53,6 +54,7 @@ body{
   background-color:rgb(207,207,226, 0);
   margin :0;
   padding:0;
+  height : 80px;
 }
 .Bar{
   margin: 4px 100px 0px 2px;
@@ -97,41 +99,55 @@ a{
   right: 0;
 }
 .home{
-  background-image: url(./ui/home2.webp);
-  background-position: top right;
+  background-image: url(./ui/1.webp);
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+  background-color: white;
   padding: 150px 100px 100px 100px;
 }
 .profile{
-  background-image: url(./ui/home2.webp);
-  background-position: top right;
+  background-image: url(./ui/2.webp);
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
-  padding: 150px 100px 100px 100px;
+  background-color: white;
+  padding: 90px 50px 10px 100px ;
 }
 .portofolio{
-  background-image: url(./ui/home2.webp);
-  background-position: top right;
+  background-color:white;
+  background-image: url(./ui/3.webp);
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
   padding: 150px 100px 100px 100px;
 }
 .contact{
-  background-image: url(./ui/home2.webp);
-  background-position: top right;
+  background-color: white;
+  background-image: url(./ui/4.webp);
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
   padding: 150px 100px 100px 100px;
 }
 
-.Logoreact{
+.floating{
   width:150px;
   padding: 0px;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  from { transform: translate(0,  0px); }
+  65%  { transform: translate(0, 15px); }
+  to   { transform: translate(0, -0px); }    
 }
 .typo{
   padding: 80px 20px;
@@ -150,6 +166,20 @@ a{
 .quote span{
   color:#dd4f4f;
 }
+.name{
+  font-family : rubik;
+  color: black;
+  font-size : 32px;
+  font-weight: 500;
+}
+.desc{
+  font-family : sans-serif;
+  font-size : 18px;
+  line-height: 1.7em;
+  letter-spacing: 1.5px;
+  padding-right: 35px;
+}
+
 .middle{
   position: absolute;
   transform: translateY(-50%);
@@ -170,6 +200,34 @@ a{
 .middle:hover .hidden{
   opacity: 1;
   max-width: 1em;
+}
+.Logoskil{
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.Logoskil img{
+  width : 400px;
+  padding-left: 100px;
+}
+.Logoprofil img{
+  width : 400px;
+}
+.Logoprofil{
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.myskil{
+  font-family : rubik;
+  color: black;
+  font-size : 32px;
+  font-weight: 500;
+}
+.colo{
+  padding-top: 10px;
 }
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
